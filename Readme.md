@@ -1,7 +1,7 @@
 # Личный проект «YetiCave»
 
 * Студент: [Denis Potapov](https://up.htmlacademy.ru/php/4/user/337309).
-* Наставник: `Неизвестно`.
+* Наставник: `Николай`.
 
 ---
 
