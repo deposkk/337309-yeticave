@@ -127,7 +127,13 @@ $user_avatar = 'img/user.jpg';
                     <div class="lot__state">
                         <div class="lot__rate">
                             <span class="lot__amount">Стартовая цена</span>
-                            <span class="lot__cost"><?=$val['productCost']; ?><b class="rub">р</b></span>
+                            <span class="lot__cost">
+                            <?php //Задание
+                              $prCost = ($val['productCost']);
+                              $prCost = number_format($prCost, 0,'' , ' ') . '<b class="rub">р</b>';
+                              print $prCost;
+                            ?>
+                                <!--<b class="rub">р</b></span>-->
                         </div>
                         <div class="lot__timer timer">
 
