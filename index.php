@@ -12,3 +12,4 @@ $layoutData = [
 $layout = renderTemplate('templates/layout.php', $layoutData); 
 print($layout); 
 ?>
+
