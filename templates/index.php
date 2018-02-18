@@ -81,7 +81,7 @@ $prCost = ($val['productCost']);
 $prCost = number_format($prCost, 0,'' , ' ') . '<b class="rub">р</b>';
 print $prCost;
 ?>
-                        </div>
+</div>
                         <div class="lot__timer timer">
                             <?php
                             date_default_timezone_set('Europe/Moscow');
