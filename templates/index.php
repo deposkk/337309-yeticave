@@ -81,10 +81,20 @@ $prCost = ($val['productCost']);
 $prCost = number_format($prCost, 0,'' , ' ') . '<b class="rub">р</b>';
 print $prCost;
 ?>
-                                <!--<b class="rub">р</b></span>-->
-                        </div>
+</div>
                         <div class="lot__timer timer">
+                            <?php
+                            date_default_timezone_set('Europe/Moscow');
+                            $H = 24 - date("H");
+                            $M = 60 - date("i");
+                            $S = 60 - date("s");
+                            $time = $H*60*60+$M*60+$S;
+                            print date('H:i:s', $time);
+                            //echo date_format($time, 'H:i:s');
+                            //print date("H:i:s");
+                            //echo date_format($time,"H:i:s");
 
+                            ?>
                         </div>
                     </div>
                 </div>
